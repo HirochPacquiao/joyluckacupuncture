@@ -14,9 +14,9 @@
 <meta property="og:url" content="https://www.joyluckacupuncture.com/">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/karla-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
@@ -46,6 +46,14 @@
 </script>
 
 <style>
+@font-face{font-family:"Spectral";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Spectral";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/spectral-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Spectral";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/spectral-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Spectral";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/spectral-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/karla-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/karla-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/karla-latin-600-normal.woff2") format("woff2")}
+
 :root{
   --ink:#14201C;
   --jade:#2F4F42;
@@ -89,6 +97,7 @@ p{margin:0 0 1.05rem}
 .lede{font-size:clamp(1.05rem,1.6vw,1.22rem);color:rgba(20,32,28,.78);max-width:52ch}
 
 :focus-visible{outline:2.5px solid var(--seal);outline-offset:3px;border-radius:2px}
+.meridian a:focus-visible{border-radius:50%}
 
 /* ---------- buttons ---------- */
 .btn{
@@ -111,20 +120,25 @@ p{margin:0 0 1.05rem}
   display:none;
 }
 .meridian ol{list-style:none;margin:0;padding:0;position:absolute;top:50%;left:0;transform:translateY(-50%)}
-.meridian li{position:relative;margin:26px 0}
+.meridian li{position:relative;margin:34px 0}
 .meridian a{
-  display:block;width:9px;height:9px;margin-left:-4px;border-radius:50%;
+  display:block;width:26px;height:26px;margin:-13px 0 -13px -13px;
+  position:relative;
+}
+.meridian a::before{
+  content:"";position:absolute;top:50%;left:50%;
+  width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;
   border:1px solid var(--celadon);background:var(--paper);
   transition:background .3s,border-color .3s,transform .3s;
 }
 .meridian a::after{
   content:attr(data-label);
-  position:absolute;left:20px;top:50%;transform:translateY(-50%);
+  position:absolute;left:33px;top:50%;transform:translateY(-50%);
   font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
   color:var(--jade);white-space:nowrap;opacity:0;transition:opacity .25s;
 }
 .meridian a:hover::after,.meridian a:focus-visible::after{opacity:1}
-.meridian a[aria-current="true"]{background:var(--seal);border-color:var(--seal);transform:scale(1.35)}
+.meridian a[aria-current="true"]::before{background:var(--seal);border-color:var(--seal);transform:scale(1.35)}
 @media(min-width:1180px){.meridian{display:block}}
 
 /* ---------- header ---------- */
@@ -142,12 +156,11 @@ p{margin:0 0 1.05rem}
 .nav a{font-size:.9rem;font-weight:500;text-decoration:none;color:rgba(20,32,28,.8)}
 .nav a:hover{color:var(--seal)}
 .masthead .cta{margin-left:auto;display:flex;gap:.6rem;align-items:center}
-.tel{display:none;font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.tel{font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap}
 .tel:hover{color:var(--seal)}
 @media(min-width:900px){
   .nav{display:flex}
   .masthead .cta{margin-left:1.8rem}
-  .tel{display:inline}
 }
 
 /* ---------- layout ---------- */
@@ -254,7 +267,7 @@ p{margin:0 0 1.05rem}
   padding:1.5rem 0;border-bottom:1px solid var(--rule);
 }
 .rate h3{flex:1 1 14rem;margin:0}
-.rate .dur{font-size:.88rem;color:rgba(20,32,28,.6);flex:0 0 auto}
+.rate .dur{font-size:.88rem;color:rgba(20,32,28,.7);flex:0 0 auto}
 .rate .amt{font-family:var(--display);font-size:1.5rem;font-weight:500;flex:0 0 auto;margin-left:auto}
 .note{font-size:.88rem;color:rgba(20,32,28,.65);margin-top:1.5rem;max-width:58ch}
 
@@ -584,7 +597,6 @@ p{margin:0 0 1.05rem}
           <li><a href="#conditions">What we treat</a></li>
           <li><a href="#first-visit">Your first visit</a></li>
           <li><a href="#rates">Rates &amp; insurance</a></li>
-          <li><a href="/blog">Blog</a></li>
         </ul>
       </div>
       <div>
@@ -599,7 +611,7 @@ p{margin:0 0 1.05rem}
     </div>
     <div class="legal">
       <span>© <span id="yr">2026</span> Joy Luck Acupuncture</span>
-      <a href="/privacy-policy">Privacy policy</a>
+      <a href="privacy-policy/">Privacy policy</a>
     </div>
   </div>
 </footer>

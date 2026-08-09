@@ -48,3 +48,10 @@ Or, if ALIAS gives trouble, four A records on `@`:
 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
 
 Verify current values at https://docs.github.com/pages before relying on these.
+
+## Fonts
+
+Spectral and Karla are self-hosted in `fonts/` (seven latin woff2 files, ~130KB
+total). There are no external network requests from any page. If you add a new
+weight or style, add a matching `@font-face` block in `index.html` — the browser
+will silently fall back to a system font otherwise.

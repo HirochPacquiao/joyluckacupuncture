@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Moved — Joy Luck Acupuncture</title>
-<link rel="canonical" href="https://www.joyluckacupuncture.com/">
-<meta http-equiv="refresh" content="0; url=https://www.joyluckacupuncture.com/">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body style="font-family:system-ui,sans-serif;padding:3rem;max-width:34rem">
-<p>This page has moved.</p>
-<p><a href="https://www.joyluckacupuncture.com/">Continue to Joy Luck Acupuncture &rarr;</a></p>
-</body>
-</html>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#14201C"/>
+  <path d="M20 4 C20 22, 26 30, 24 46 C22.5 56, 25 60, 24 64" fill="none" stroke="#9FBCAD" stroke-width="2.4" opacity=".55"/>
+  <path d="M44 4 C44 24, 38 32, 41 47 C42.5 56, 40 60, 41 64" fill="none" stroke="#9FBCAD" stroke-width="2.4" opacity=".55"/>
+  <circle cx="24" cy="30" r="6" fill="#B23A2F"/>
+</svg>

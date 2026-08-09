@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Joy Luck Acupuncture</title>
+<meta name="description" content="Privacy policy for Joy Luck Acupuncture, Los Altos, CA.">
+<link rel="canonical" href="https://www.joyluckacupuncture.com/privacy-policy/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Spectral";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/spectral-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/karla-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/karla-latin-600-normal.woff2") format("woff2")}
+
+:root{--ink:#14201C;--jade:#2F4F42;--paper:#EFF1EB;--seal:#B23A2F;--rule:rgba(20,32,28,.16)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Karla",sans-serif;font-size:17px;line-height:1.7}
+.wrap{max-width:44rem;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,5vw,2rem)}
+h1{font-family:"Spectral",serif;font-weight:500;font-size:clamp(2rem,4vw,2.85rem);line-height:1.15;margin:0 0 1.5rem}
+h2{font-family:"Spectral",serif;font-weight:500;font-size:1.35rem;margin:2.75rem 0 .75rem}
+p{margin:0 0 1.1rem}
+a{color:var(--seal)}
+.back{display:inline-block;margin-bottom:2.5rem;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--jade);text-decoration:none}
+.updated{font-size:.88rem;color:rgba(20,32,28,.6);padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../">&larr; Joy Luck Acupuncture</a>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: REPLACE &mdash; date</p>
+
+<h2>What we collect</h2>
+<p>REPLACE &mdash; Describe what the website collects. If you add a newsletter signup, that is a name and email address. If you use analytics, say so and name the tool.</p>
+
+<h2>How we use it</h2>
+<p>REPLACE &mdash; State plainly what you do with the information and that you do not sell it.</p>
+
+<h2>Protected health information</h2>
+<p>REPLACE &mdash; Note that clinical records are handled separately from this website under HIPAA, and point people to your Notice of Privacy Practices. Ask your attorney or malpractice carrier to review this section.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:joyluckacu@gmail.com">joyluckacu@gmail.com</a> or 669-600-1557.</p>
+</div>
+</body>
+</html>

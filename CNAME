@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Joy Luck Acupuncture</title>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:#EFF1EB;color:#14201C;font-family:"Karla",sans-serif;padding:2rem}
+h1{font-family:"Spectral",serif;font-weight:500;font-size:clamp(1.85rem,4vw,2.6rem);margin:0 0 1rem}
+p{margin:0 0 2rem;color:rgba(20,32,28,.7);max-width:34ch}
+a{display:inline-block;background:#B23A2F;color:#fff;text-decoration:none;font-weight:600;
+font-size:.94rem;padding:.85rem 1.5rem;border-radius:2px}
+</style>
+</head>
+<body>
+<div>
+<h1>That page isn't here</h1>
+<p>It may have moved when we rebuilt the site. The homepage has everything.</p>
+<a href="/">Go to the homepage</a>
+</div>
+</body>
+</html>

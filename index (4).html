@@ -1,0 +1,50 @@
+# joyluckacupuncture.com
+
+Static site for Joy Luck Acupuncture, Los Altos CA. Plain HTML and CSS, no build step.
+Served by GitHub Pages from the `main` branch, root folder.
+
+## Files
+
+| Path | Purpose |
+|---|---|
+| `index.html` | The whole homepage — markup, CSS, and JSON-LD schema in one file |
+| `privacy-policy/` | Privacy policy (needs completing) |
+| `404.html` | Not-found page |
+| `appointment/`, `pricing-plans/`, `general-4/`, `contact-us/`, `blog/` | Redirect stubs preserving the old Wix URLs |
+| `CNAME` | Tells GitHub Pages the custom domain — do not delete |
+| `.nojekyll` | Stops GitHub running Jekyll over the files |
+| `robots.txt`, `sitemap.xml` | Search engine basics |
+
+## Still to fill in
+
+Search the repo for `REPLACE`:
+
+- Street address and ZIP (in `index.html` three times: JSON-LD schema, visit section, footer)
+- Practitioner name, license number, school, years in practice
+- Follow-up and package pricing
+- Booking URL, Yelp URL, Google Business Profile URL
+- Privacy policy body
+
+## Editing
+
+Edit the file, then:
+
+    git add -A
+    git commit -m "Describe the change"
+    git push
+
+Live in about a minute. Check the Actions tab if it doesn't appear.
+
+## DNS
+
+Domain registered at Namecheap. Nameservers must be Namecheap BasicDNS, not Wix.
+
+Advanced DNS records:
+
+    CNAME   www   <username>.github.io.
+    ALIAS   @     <username>.github.io.
+
+Or, if ALIAS gives trouble, four A records on `@`:
+185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+
+Verify current values at https://docs.github.com/pages before relying on these.

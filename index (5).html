@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acupuncture in Los Altos, CA | Joy Luck Acupuncture</title>
+<meta name="description" content="Licensed acupuncture in Los Altos, CA for chronic pain, stress and anxiety, fertility, and digestive health. 90-minute first visit. Call 669-600-1557 to book.">
+<link rel="canonical" href="https://www.joyluckacupuncture.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Joy Luck Acupuncture">
+<meta property="og:title" content="Acupuncture in Los Altos, CA | Joy Luck Acupuncture">
+<meta property="og:description" content="Licensed acupuncture in Los Altos, CA for chronic pain, stress and anxiety, fertility, and digestive health. 90-minute first visit.">
+<meta property="og:url" content="https://www.joyluckacupuncture.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "additionalType": "https://schema.org/HealthAndBeautyBusiness",
+  "name": "Joy Luck Acupuncture",
+  "url": "https://www.joyluckacupuncture.com/",
+  "telephone": "+1-669-600-1557",
+  "email": "joyluckacu@gmail.com",
+  "medicalSpecialty": "Acupuncture",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "REPLACE_WITH_STREET_ADDRESS",
+    "addressLocality": "Los Altos",
+    "addressRegion": "CA",
+    "postalCode": "REPLACE_WITH_ZIP",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "11:00" }
+  ],
+  "priceRange": "$$",
+  "areaServed": ["Los Altos","Los Altos Hills","Mountain View","Palo Alto","Sunnyvale","Cupertino"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#14201C;
+  --jade:#2F4F42;
+  --celadon:#9FBCAD;
+  --paper:#EFF1EB;
+  --paper-2:#E4E8DF;
+  --seal:#B23A2F;
+  --rule:rgba(20,32,28,.16);
+
+  --display:"Spectral",Georgia,serif;
+  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+  --pad:clamp(1.25rem,5vw,4.5rem);
+  --rail:74px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.12;margin:0;letter-spacing:-.015em}
+h1{font-size:clamp(2.35rem,5.6vw,4.15rem)}
+h2{font-size:clamp(1.85rem,3.6vw,2.85rem)}
+h3{font-size:1.18rem;line-height:1.3}
+p{margin:0 0 1.05rem}
+
+.eyebrow{
+  font-size:.7rem;font-weight:600;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--jade);margin:0 0 1.1rem;
+}
+.lede{font-size:clamp(1.05rem,1.6vw,1.22rem);color:rgba(20,32,28,.78);max-width:52ch}
+
+:focus-visible{outline:2.5px solid var(--seal);outline-offset:3px;border-radius:2px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--body);font-size:.94rem;font-weight:600;letter-spacing:.01em;
+  padding:.85rem 1.5rem;border-radius:2px;text-decoration:none;
+  border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s;
+}
+.btn-primary{background:var(--seal);color:#fff;border-color:var(--seal)}
+.btn-primary:hover{background:#932C23;border-color:#932C23}
+.btn-ghost{border-color:var(--rule);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:rgba(20,32,28,.04)}
+.btn-light{border-color:rgba(239,241,235,.35);color:var(--paper)}
+.btn-light:hover{background:rgba(239,241,235,.1);border-color:var(--paper)}
+
+/* ---------- meridian rail (signature) ---------- */
+.meridian{
+  position:fixed;left:30px;top:0;bottom:0;width:1px;z-index:40;
+  background:linear-gradient(180deg,transparent 0,var(--rule) 12%,var(--rule) 88%,transparent 100%);
+  display:none;
+}
+.meridian ol{list-style:none;margin:0;padding:0;position:absolute;top:50%;left:0;transform:translateY(-50%)}
+.meridian li{position:relative;margin:26px 0}
+.meridian a{
+  display:block;width:9px;height:9px;margin-left:-4px;border-radius:50%;
+  border:1px solid var(--celadon);background:var(--paper);
+  transition:background .3s,border-color .3s,transform .3s;
+}
+.meridian a::after{
+  content:attr(data-label);
+  position:absolute;left:20px;top:50%;transform:translateY(-50%);
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  color:var(--jade);white-space:nowrap;opacity:0;transition:opacity .25s;
+}
+.meridian a:hover::after,.meridian a:focus-visible::after{opacity:1}
+.meridian a[aria-current="true"]{background:var(--seal);border-color:var(--seal);transform:scale(1.35)}
+@media(min-width:1180px){.meridian{display:block}}
+
+/* ---------- header ---------- */
+.masthead{
+  position:sticky;top:0;z-index:50;background:rgba(239,241,235,.93);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+}
+.masthead .inner{
+  display:flex;align-items:center;gap:1.5rem;
+  padding:.85rem var(--pad);
+}
+.wordmark{font-family:var(--display);font-size:1.22rem;font-weight:600;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.wordmark span{color:var(--seal)}
+.nav{display:none;gap:1.6rem;margin-left:auto;align-items:center}
+.nav a{font-size:.9rem;font-weight:500;text-decoration:none;color:rgba(20,32,28,.8)}
+.nav a:hover{color:var(--seal)}
+.masthead .cta{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+.tel{display:none;font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.tel:hover{color:var(--seal)}
+@media(min-width:900px){
+  .nav{display:flex}
+  .masthead .cta{margin-left:1.8rem}
+  .tel{display:inline}
+}
+
+/* ---------- layout ---------- */
+.section{padding:clamp(3.75rem,7.5vw,6.5rem) var(--pad)}
+.wrap{max-width:1180px;margin:0 auto}
+@media(min-width:1180px){.wrap{padding-left:var(--rail)}}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(3rem,6vw,5rem);padding-bottom:0}
+.hero-grid{display:grid;gap:clamp(2.5rem,5vw,4rem);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;color:var(--jade)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+
+.hero-art{
+  background:var(--ink);border-radius:3px;overflow:hidden;
+  aspect-ratio:4/5;max-height:560px;position:relative;
+}
+.hero-art svg{width:100%;height:100%;display:block}
+.hero-art figcaption{
+  position:absolute;left:22px;bottom:20px;right:22px;
+  font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(159,188,173,.75);font-weight:600;
+}
+.mline{fill:none;stroke:var(--celadon);stroke-width:.8;opacity:.42}
+.mpt{fill:var(--celadon);opacity:.55}
+.mpt-live{fill:var(--seal);opacity:1}
+
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes breathe{0%,100%{opacity:.35;r:2.4}50%{opacity:1;r:3.6}}
+.mline{stroke-dasharray:700;stroke-dashoffset:700;animation:draw 2.4s ease-out forwards}
+.mline:nth-of-type(2){animation-delay:.18s}
+.mline:nth-of-type(3){animation-delay:.36s}
+.mline:nth-of-type(4){animation-delay:.54s}
+.mpt-live{animation:breathe 4.5s ease-in-out infinite}
+.mpt-live:nth-of-type(even){animation-delay:1.6s}
+
+/* ---------- trust strip ---------- */
+.strip{
+  margin-top:clamp(3rem,6vw,4.5rem);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  display:grid;gap:0;
+}
+@media(min-width:760px){.strip{grid-template-columns:repeat(3,1fr)}}
+.strip div{padding:1.4rem 0;border-bottom:1px solid var(--rule)}
+@media(min-width:760px){
+  .strip div{border-bottom:none;border-right:1px solid var(--rule);padding:1.5rem 1.75rem}
+  .strip div:first-child{padding-left:0}
+  .strip div:last-child{border-right:none}
+}
+.strip strong{display:block;font-family:var(--display);font-size:1.28rem;font-weight:500;margin-bottom:.15rem}
+.strip span{font-size:.87rem;color:rgba(20,32,28,.68)}
+
+/* ---------- section heading ---------- */
+.head{max-width:60ch;margin-bottom:clamp(2.25rem,4vw,3.25rem)}
+.head p{margin-top:1.1rem}
+
+/* ---------- conditions ---------- */
+.cards{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--paper);padding:2rem 1.75rem;transition:background .25s}
+.card:hover{background:var(--paper-2)}
+.card h3{margin-bottom:.65rem}
+.card p{font-size:.94rem;color:rgba(20,32,28,.75);margin:0}
+.card .mark{
+  width:26px;height:1px;background:var(--seal);display:block;margin-bottom:1.25rem;
+}
+
+/* ---------- process ---------- */
+.process{background:var(--ink);color:var(--paper)}
+.process h2,.process h3{color:var(--paper)}
+.process .lede{color:rgba(239,241,235,.75)}
+.process .eyebrow{color:var(--celadon)}
+.steps{display:grid;gap:2.5rem;counter-reset:step}
+@media(min-width:820px){.steps{grid-template-columns:repeat(4,1fr);gap:2rem}}
+.step{border-top:1px solid rgba(159,188,173,.28);padding-top:1.25rem}
+.step .num{
+  font-family:var(--display);font-size:.82rem;letter-spacing:.16em;
+  color:var(--celadon);display:block;margin-bottom:.9rem;
+}
+.step p{font-size:.93rem;color:rgba(239,241,235,.72);margin:.55rem 0 0}
+
+/* ---------- practitioner ---------- */
+.bio{display:grid;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+@media(min-width:860px){.bio{grid-template-columns:.85fr 1.15fr}}
+.bio-photo{background:var(--paper-2);aspect-ratio:4/5;border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.bio-photo span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--jade);font-weight:600}
+.creds{list-style:none;margin:1.75rem 0 0;padding:0;border-top:1px solid var(--rule)}
+.creds li{padding:.85rem 0;border-bottom:1px solid var(--rule);font-size:.92rem;display:flex;gap:1rem}
+.creds b{font-weight:600;min-width:8.5rem;color:var(--jade)}
+
+/* ---------- quote ---------- */
+.quote{background:var(--paper-2)}
+.quote blockquote{margin:0;max-width:34ch}
+.quote q{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.35;quotes:none;display:block}
+.quote q::before{content:"";display:block;width:34px;height:1px;background:var(--seal);margin-bottom:1.75rem}
+.quote cite{display:block;margin-top:1.75rem;font-style:normal;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--jade)}
+
+/* ---------- pricing ---------- */
+.rates{border-top:1px solid var(--rule)}
+.rate{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1.25rem;
+  padding:1.5rem 0;border-bottom:1px solid var(--rule);
+}
+.rate h3{flex:1 1 14rem;margin:0}
+.rate .dur{font-size:.88rem;color:rgba(20,32,28,.6);flex:0 0 auto}
+.rate .amt{font-family:var(--display);font-size:1.5rem;font-weight:500;flex:0 0 auto;margin-left:auto}
+.note{font-size:.88rem;color:rgba(20,32,28,.65);margin-top:1.5rem;max-width:58ch}
+
+/* ---------- visit ---------- */
+.visit{display:grid;gap:clamp(2rem,4vw,3.5rem)}
+@media(min-width:820px){.visit{grid-template-columns:1fr 1fr}}
+.info dt{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--jade);margin-top:1.85rem}
+.info dt:first-of-type{margin-top:0}
+.info dd{margin:.5rem 0 0;font-size:1rem}
+.info dd a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.info dd a:hover{border-color:var(--seal);color:var(--seal)}
+.hours{width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.96rem}
+.hours th{text-align:left;font-weight:500;padding:.42rem 0;color:rgba(20,32,28,.75)}
+.hours td{text-align:right;padding:.42rem 0}
+.hours tr{border-bottom:1px solid var(--rule)}
+.map{background:var(--paper-2);border-radius:3px;min-height:340px;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.map span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--jade);font-weight:600;max-width:22ch;line-height:1.7}
+
+/* ---------- closing cta ---------- */
+.closer{background:var(--jade);color:var(--paper);text-align:center}
+.closer h2{color:var(--paper);max-width:20ch;margin:0 auto 1.25rem}
+.closer p{color:rgba(239,241,235,.8);max-width:46ch;margin:0 auto 2rem}
+.closer .hero-actions{justify-content:center;margin-top:0}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:rgba(239,241,235,.72);font-size:.9rem;padding:clamp(3rem,5vw,4rem) var(--pad) 2rem}
+.foot a{color:rgba(239,241,235,.72);text-decoration:none}
+.foot a:hover{color:var(--paper)}
+.foot-grid{display:grid;gap:2.25rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(159,188,173,.2)}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot h4{font-family:var(--body);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--celadon);margin:0 0 1rem;font-weight:600}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{margin-bottom:.6rem}
+.foot .wordmark{color:var(--paper);font-size:1.15rem;display:inline-block;margin-bottom:.9rem}
+.foot .legal{padding-top:1.75rem;display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;font-size:.82rem;color:rgba(239,241,235,.5)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .mline{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<nav class="meridian" aria-label="Page sections">
+  <ol>
+    <li><a href="#top" data-label="Start" data-dot></a></li>
+    <li><a href="#conditions" data-label="What we treat" data-dot></a></li>
+    <li><a href="#first-visit" data-label="First visit" data-dot></a></li>
+    <li><a href="#practitioner" data-label="Practitioner" data-dot></a></li>
+    <li><a href="#rates" data-label="Rates" data-dot></a></li>
+    <li><a href="#visit" data-label="Visit us" data-dot></a></li>
+  </ol>
+</nav>
+
+<header class="masthead">
+  <div class="inner">
+    <a class="wordmark" href="#top">Joy Luck <span>·</span> Acupuncture</a>
+    <div class="nav">
+      <a href="#conditions">What we treat</a>
+      <a href="#first-visit">First visit</a>
+      <a href="#rates">Rates &amp; insurance</a>
+      <a href="#visit">Visit us</a>
+    </div>
+    <div class="cta">
+      <a class="tel" href="tel:+16696001557">669-600-1557</a>
+      <a class="btn btn-primary" href="#book">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="section hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Traditional Chinese medicine · Los Altos, CA</p>
+        <h1>Acupuncture that treats the cause, not just the <em>ache</em>.</h1>
+        <p class="lede">We work with chronic pain, stress and anxiety, fertility, digestion, and immune health. Your first visit runs a full 90 minutes — enough time to be properly listened to before a single needle goes in.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Book a visit</a>
+          <a class="btn btn-ghost" href="tel:+16696001557">Call 669-600-1557</a>
+        </div>
+      </div>
+
+      <figure class="hero-art" style="margin:0">
+        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of meridian pathways marked with acupuncture points">
+          <path class="mline" d="M92 -20 C 92 120, 128 190, 118 300 C 110 390, 132 450, 128 520"/>
+          <path class="mline" d="M172 -20 C 172 140, 148 210, 162 320 C 172 400, 156 460, 166 520"/>
+          <path class="mline" d="M252 -20 C 252 110, 286 200, 268 305 C 254 385, 278 445, 270 520"/>
+          <path class="mline" d="M328 -20 C 328 150, 300 220, 314 330 C 324 410, 306 465, 316 520"/>
+
+          <circle class="mpt" cx="94" cy="72" r="2.6"/>
+          <circle class="mpt-live" cx="120" cy="238" r="3"/>
+          <circle class="mpt" cx="118" cy="330" r="2.6"/>
+          <circle class="mpt" cx="128" cy="452" r="2.6"/>
+
+          <circle class="mpt" cx="168" cy="96" r="2.6"/>
+          <circle class="mpt" cx="152" cy="212" r="2.6"/>
+          <circle class="mpt-live" cx="164" cy="352" r="3"/>
+          <circle class="mpt" cx="162" cy="470" r="2.6"/>
+
+          <circle class="mpt-live" cx="258" cy="128" r="3"/>
+          <circle class="mpt" cx="280" cy="216" r="2.6"/>
+          <circle class="mpt" cx="266" cy="336" r="2.6"/>
+          <circle class="mpt" cx="274" cy="440" r="2.6"/>
+
+          <circle class="mpt" cx="326" cy="88" r="2.6"/>
+          <circle class="mpt" cx="308" cy="244" r="2.6"/>
+          <circle class="mpt-live" cx="316" cy="376" r="3"/>
+          <circle class="mpt" cx="310" cy="482" r="2.6"/>
+        </svg>
+        <figcaption>Points along the meridians</figcaption>
+      </figure>
+    </div>
+
+    <div class="strip">
+      <div><strong>90 minutes</strong><span>Your first appointment, start to finish</span></div>
+      <div><strong>Tue – Sat</strong><span>Evening and Sunday slots by request</span></div>
+      <div><strong>Insurance</strong><span>Bring your card — we'll check your coverage</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="section" id="conditions">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">What we treat</p>
+      <h2>Six areas we see most often</h2>
+      <p class="lede">Treatment is built around your history, not a protocol off a chart. Most people come in for one of these — though plenty arrive with something else entirely, and that's fine too.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <span class="mark"></span>
+        <h3>Chronic and acute pain</h3>
+        <p>Back, neck, shoulder, joint, and nerve pain. Needling at specific points modulates the pain response, reduces inflammation, and improves circulation to the area — without adding another medication.</p>
+      </article>
+      <article class="card">
+        <span class="mark"></span>
+        <h3>Stress and anxiety</h3>
+        <p>Acupuncture helps regulate the autonomic nervous system and lower circulating cortisol. Many people describe the sessions themselves as the most rested they've felt all week.</p>
+      </article>
+      <article class="card">
+        <span class="mark"></span>
+        <h3>Fertility and reproductive health</h3>
+        <p>Improved pelvic blood flow and hormone regulation support both natural conception and IVF or IUI cycles. We coordinate timing around your clinic's protocol.</p>
+      </article>
+      <article class="card">
+        <span class="mark"></span>
+        <h3>Digestive health</h3>
+        <p>Bloating, constipation, reflux, and IBS-type symptoms. Treatment targets gastrointestinal motility and inflammation to improve digestion and nutrient absorption.</p>
+      </article>
+      <article class="card">
+        <span class="mark"></span>
+        <h3>Immune support</h3>
+        <p>For people who catch everything going around, or who are recovering slowly. Treatment supports circulation and lymphatic drainage to help the body do its own work.</p>
+      </article>
+      <article class="card">
+        <span class="mark"></span>
+        <h3>General wellness</h3>
+        <p>Sleep, energy, and the vague run-down feeling that doesn't have a name yet. Regular sessions to keep things steady rather than waiting for something to go wrong.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST VISIT -->
+<section class="section process" id="first-visit">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Your first visit</p>
+      <h2>What actually happens</h2>
+      <p class="lede">If you've never had acupuncture, the unknown is usually the thing holding you back. Here's the whole ninety minutes.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="num">01 — Intake</span>
+        <h3>We talk first</h3>
+        <p>Your symptoms, history, sleep, digestion, stress, medications. Around 20 minutes, and it shapes everything that follows.</p>
+      </div>
+      <div class="step">
+        <span class="num">02 — Diagnosis</span>
+        <h3>Pulse and tongue</h3>
+        <p>Two traditional diagnostic readings that tell us how your system is currently running, alongside what you've described.</p>
+      </div>
+      <div class="step">
+        <span class="num">03 — Treatment</span>
+        <h3>Needles, then rest</h3>
+        <p>Hair-thin, single-use, sterile. Most people feel a dull heaviness at most. You rest with them in place for 20–30 minutes.</p>
+      </div>
+      <div class="step">
+        <span class="num">04 — Plan</span>
+        <h3>Where to go next</h3>
+        <p>An honest read on how many sessions your condition typically needs, plus anything to change at home. No packages pushed on you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTITIONER -->
+<section class="section" id="practitioner">
+  <div class="wrap">
+    <div class="bio">
+      <div class="bio-photo"><span>Add practitioner photo</span></div>
+      <div>
+        <p class="eyebrow">Your practitioner</p>
+        <h2>REPLACE — Practitioner name, L.Ac.</h2>
+        <p class="lede" style="margin-top:1.25rem">REPLACE — Two or three sentences: where they trained, how many years in practice, what drew them to acupuncture, and any area they focus on. This is the single most important block on the page for both patient trust and Google's assessment of a health site.</p>
+        <ul class="creds">
+          <li><b>License</b> <span>REPLACE — California Acupuncture Board license no.</span></li>
+          <li><b>Education</b> <span>REPLACE — Degree and school</span></li>
+          <li><b>In practice</b> <span>REPLACE — Since year</span></li>
+          <li><b>Languages</b> <span>REPLACE — e.g. English, Mandarin</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section quote">
+  <div class="wrap">
+    <blockquote>
+      <q>My experience at Joy Luck Acupuncture was fantastic. Great service, fair price, and most importantly, it fixed my issues.</q>
+      <cite>Bob · San Jose</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- RATES -->
+<section class="section" id="rates">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Rates &amp; insurance</p>
+      <h2>What it costs</h2>
+    </div>
+
+    <div class="rates">
+      <div class="rate">
+        <h3>Initial consultation &amp; treatment</h3>
+        <span class="dur">90 min</span>
+        <span class="amt">$180</span>
+      </div>
+      <div class="rate">
+        <h3>Follow-up treatment</h3>
+        <span class="dur">REPLACE min</span>
+        <span class="amt">$REPLACE</span>
+      </div>
+      <div class="rate">
+        <h3>Package of REPLACE sessions</h3>
+        <span class="dur">Prepaid</span>
+        <span class="amt">$REPLACE</span>
+      </div>
+    </div>
+
+    <p class="note">We're happy to check your insurance benefits before your first appointment — call or email with your plan details and we'll tell you what's covered. Superbills available for out-of-network reimbursement, HSA and FSA cards accepted.</p>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section" id="visit">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Visit us</p>
+      <h2>Hours &amp; location</h2>
+    </div>
+
+    <div class="visit">
+      <div class="info">
+        <dl style="margin:0">
+          <dt>Address</dt>
+          <dd>REPLACE — Street address<br>Los Altos, CA REPLACE</dd>
+
+          <dt>Phone</dt>
+          <dd><a href="tel:+16696001557">669-600-1557</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:joyluckacu@gmail.com">joyluckacu@gmail.com</a></dd>
+
+          <dt>Hours</dt>
+          <dd>
+            <table class="hours">
+              <tr><th scope="row">Monday</th><td>Closed</td></tr>
+              <tr><th scope="row">Tuesday – Friday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr><th scope="row">Saturday</th><td>9:00 am – 11:00 am</td></tr>
+              <tr><th scope="row">Sunday</th><td>By appointment</td></tr>
+            </table>
+          </dd>
+        </dl>
+      </div>
+
+      <div class="map"><span>Embed Google Map here — use the Share → Embed a map iframe from your Google Business Profile listing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section class="section closer" id="book">
+  <div class="wrap">
+    <h2>Ready when you are</h2>
+    <p>Book online, or call and talk it through first — either is fine. If you're unsure whether acupuncture is right for what you're dealing with, just ask.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="REPLACE_BOOKING_URL">Book online</a>
+      <a class="btn btn-light" href="tel:+16696001557">Call 669-600-1557</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="#top">Joy Luck Acupuncture</a>
+        <p style="margin:0">Licensed acupuncture and traditional Chinese medicine in Los Altos, California. Serving Los Altos Hills, Mountain View, Palo Alto, Sunnyvale, and Cupertino.</p>
+      </div>
+      <div>
+        <h4>Clinic</h4>
+        <ul>
+          <li><a href="#conditions">What we treat</a></li>
+          <li><a href="#first-visit">Your first visit</a></li>
+          <li><a href="#rates">Rates &amp; insurance</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li>REPLACE — Street address<br>Los Altos, CA REPLACE</li>
+          <li><a href="tel:+16696001557">669-600-1557</a></li>
+          <li><a href="mailto:joyluckacu@gmail.com">joyluckacu@gmail.com</a></li>
+          <li><a href="REPLACE_YELP_URL">Yelp</a> · <a href="REPLACE_GOOGLE_URL">Google</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Joy Luck Acupuncture</span>
+      <a href="/privacy-policy">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+var dots = Array.prototype.slice.call(document.querySelectorAll('.meridian a'));
+var targets = dots.map(function(d){ return document.querySelector(d.getAttribute('href')); }).filter(Boolean);
+
+if ('IntersectionObserver' in window && targets.length) {
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      dots.forEach(function(d){
+        d.setAttribute('aria-current', d.getAttribute('href') === '#' + e.target.id ? 'true' : 'false');
+      });
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  targets.forEach(function(t){ obs.observe(t); });
+}
+</script>
+</body>
+</html>
